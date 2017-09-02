@@ -1,0 +1,12 @@
+.jumbotron {
+  width: 100%;
+  height: 35%;
+  background-color: var(--light-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jumbotron img {
+  height: 90%;
+}
