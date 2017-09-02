@@ -1,1 +1,204 @@
 /* You can add global styles to this file, and also import other style files */
+
+/*_______________________________*/
+/*----------- COLORS -----------*/
+/*GREEN :               var(--main-green) */
+/*DARK GREY (fonts) :   #706E6E */
+/*LIGHT GREY (bg form): #DCE3D7 */
+/*MEDIUM GREY (input) : #C2C6BD */
+/*______________________________*/
+
+* {
+  --main-green: #00AABB;
+  --light-green: #D6E3DD;
+  --purple: #944389;
+  --dark-grey: #706e6e;     /* textes */
+}
+
+/*--------- GLOBAL ---------*/
+body,
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Oxygen', sans-serif;
+  margin: auto 0;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+  padding: 15px;
+  position: relative;
+}
+
+/*--------- MISE EN FORME FLEXBOX ---------*/
+
+/*Positionement FlexBox*/
+.d-flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.d-flex-row.horizontal-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.d-flex-row.vertical-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.d-flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.d-flex-column.vertical-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.d-flex-column.horizontal-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.block-center {
+  margin: auto;
+}
+
+/*--------- TEXTES ---------*/
+
+/*Général textes*/
+p {
+  margin: 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+/*Couleurs textes*/
+.text-brand {
+  color: var(--main-green);
+}
+
+.text-white {
+  color: white;
+}
+
+.text-grey {
+  color: var(--dark-grey);
+}
+
+.text-purple {
+  color: var(--purple);
+}
+
+/*--------- BOUTONS ---------*/
+/*Boutons style général*/
+.btn {
+  display: block;
+  text-align: center;
+  vertical-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: solid 1px var(--main-green);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+}
+
+
+/*Gros bouton fond couleur / hover bordure seule*/
+/*Utilisation pour inscription*/
+.btn-big {
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 50px;
+  width: 250px;
+  height: 50px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: white;
+  border-radius: 40px;
+  background-color: var(--main-green);
+}
+
+.btn-big:hover {
+  color: var(--main-green);
+  background-color: white;
+}
+
+/*Petit bouton bordure seule / hover fond couleur*/
+/*Utilisation lien articles*/
+.btn-small {
+  font-size: .8em;
+  font-weight: bold;
+  line-height: 2em;
+  display: block;
+  width: 40%;
+  text-align: center;
+  vertical-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: solid 1px var(--main-green);
+  border-radius: 20px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.btn-small:hover {
+  color: white;
+  background-color: var(--main-green);
+}
+
+/*Boutons normal et hover fonds couleur*/
+/*Boutons submit formulaire*/
+.btn-submit {
+  margin: 20px 0 10px 0;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  background-color: var(--main-green);
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.btn-submit:hover,
+.btn-submit:focus {
+  background-color: #5aada4;
+}
+
+/*////////////////////////*/
+/*bouton temporaire maquette link*/
+/*////////////////////////*/
+a.btn-submit {
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  line-height: 40px;
+  vertical-align: center;
+}
+/*////////////////////////*/
