@@ -1,0 +1,21 @@
+<nav>
+  <div class="container d-flex-row">
+    <!-- Partie gauche de la navbar => logo -->
+    <div class="logoAVR d-flex-row">
+      <img src="assets/medias/logoAVR34.svg" alt="">
+      <div class="d-flex-column vertical-center">
+        <p class="text-brand bold">AVR-34</p>
+        <p class="text-grey">Votre plateforme d'achats responsables</p>
+      </div>
+    </div>
+
+    <!-- Partie droite de la navbar => liens -->
+    <ul class="d-flex-row vertical-center">
+      <li><a [routerLink]="['/home']" class="nav-selected text-grey d-flex-column vertical-center"><img src="assets/medias/homepage.svg" alt="">accueil</a></li>
+      <li><a [routerLink]="['/apropos']" class="text-grey d-flex-column vertical-center"><img src="assets/medias/star.svg" alt="">à propos</a></li>
+      <li><a href="#" class="text-purple d-flex-column vertical-center"><img src="assets/medias/user.svg" alt="">espace fournisseur</a></li>
+    </ul>
+
+
+  </div>
+</nav>

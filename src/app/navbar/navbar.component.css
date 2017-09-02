@@ -1,0 +1,61 @@
+/*--------- NAVBAR ---------*/
+nav {
+  background-color: var(--light-green);
+  display: flex;
+}
+nav .container {
+  height: 80px;
+  padding: 0;
+  margin-bottom: 15px;
+}
+/*Logo*/
+.logoAVR {
+  width: 60%;
+}
+.logoAVR img {
+  width: 50px;
+  margin-right: 20px;
+}
+
+.logoAVR div p:first-child {
+  font-size: 1.2em;
+}
+
+.logoAVR div p:last-child {
+  font-size: 0.8em;
+}
+
+/*Liens*/
+nav ul {
+  padding: 0;
+  margin: 0;
+  width: 40%;
+  justify-content: space-between;
+}
+nav ul li {
+  display: block;
+  width: 33%;
+  height: 100%;
+  list-style: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+nav ul li a {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.6em;
+  text-decoration: none;
+  font-weight: bold;
+  height: 100%;
+}
+nav ul li a img {
+  height: 15px;
+  margin-bottom: 10px;
+}
+
+.nav-selected {
+  background-color: #EFEFEF;
+}
+nav ul li a:hover {
+  background-color: #EFEFEF;
+}
