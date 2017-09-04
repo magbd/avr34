@@ -6,11 +6,13 @@ import { HomeJumbotronComponent } from './home-jumbotron.component'
 import { HomeContentComponent } from './home-content.component'
 import { SharedModule } from '../shared/shared.module'
 import { FormModule } from '../form/form.module'
+import { DialogModule } from '../dialog/dialog.module'
 
 @NgModule({
     imports: [ CommonModule,
                SharedModule,
-               FormModule
+               FormModule,
+               DialogModule
             ],
     declarations: [ HomeComponent,
                     HomeJumbotronComponent,

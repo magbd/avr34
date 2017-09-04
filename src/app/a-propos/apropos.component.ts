@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   selector: 'apropos',
   template: `
   <h1>Page à propos à créer</h1>
+  <dialog-component></dialog-component>
   `
 })
 

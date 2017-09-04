@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 /*_______________________________*/
 /*----------- COLORS -----------*/
@@ -36,6 +37,10 @@ body {
   margin: auto;
   padding: 15px;
   position: relative;
+}
+
+a {
+  cursor: pointer;
 }
 
 /*--------- MISE EN FORME FLEXBOX ---------*/
