@@ -1,0 +1,10 @@
+/*Inscription html 1-5 //////////////////////////////*/
+/*Code postal + Tel*/
+.small.left {
+  width: 35%;
+}
+
+/*Ville + Mail*/
+.small.right{
+  width: 60%;
+}

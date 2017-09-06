@@ -8,7 +8,7 @@ import { NavbarModule } from './navbar/navbar.module'
 import { HomeModule } from './home/home.module'
 import { AproposModule } from './a-propos/apropos.module'
 import { DialogModule } from './dialog/dialog.module'
-// import { FormModule } from './form/form.module'
+import { FormModule } from './form/form.module'
 // import { SharedModule } from './shared/shared.module'
 
 import { AppRoutingModule }     from './app-routing.module';
@@ -25,7 +25,7 @@ import { AppRoutingModule }     from './app-routing.module';
     HomeModule,
     AproposModule,
     DialogModule,
-    // FormModule,
+    FormModule,
     // SharedModule,
     AppRoutingModule
   ],

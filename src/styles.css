@@ -207,3 +207,148 @@ a.btn-submit {
   vertical-align: center;
 }
 /*////////////////////////*/
+
+/*--------- MODAL ---------*/
+
+/* Modal (background) */
+/* #modal { */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* position: fixed; */
+  /* width: 100%; */
+  /* height: 100%; */
+  /* z-index: 1; */
+  /* background-color: rgba(90, 100, 103, 0.7); */
+/* } */
+
+/* Modal Content/Box */
+.modalContent {
+  /* width: 40%; */
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.headerModal {
+  justify-content: space-between;
+}
+
+/*Close modal button*/
+#btnClose {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border: solid 2px #1a8a7e;
+  border-radius: 50%;
+}
+.btnClose-video {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+#btnClose:before,
+#btnClose:after {
+  position: absolute;
+  top: 17px;
+  width: 25px;
+  height: 3px;
+  content: '';
+  border-radius: 2px;
+  background-color: #1a8a7e;
+}
+
+#btnClose:before {
+  left: 5px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#btnClose:after {
+  right: 5px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/*--------- FORM ---------*/
+
+/*Titres*/
+.titleForm,
+.subtitleForm {
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  padding-left: 20px;
+}
+
+.title {
+  color: #1A8A7E;
+  font-size: 1.2em;
+}
+
+.subtitle {
+  font-size: 0.8em;
+}
+
+.title.bold {
+  font-weight: bold;
+  font-size: 1.4em;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/*Form et input*/
+form {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #DCE3D7;
+  border-radius: 20px;
+}
+
+.formElement {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.formElement.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.large {
+  width: 100%;
+}
+
+label {
+  font-weight: bold;
+  font-size: 0.8em;
+  margin-bottom: 5px;
+  color: #706e6e;
+}
+
+input {
+  height: 30px;
+  background-color: #F9F9F9;
+  border: solid 1px #F9F9F9;
+  border-radius: 5px;
+}
+
+input,
+input:focus {
+  padding-left: 10px;
+  color: #706E6E;
+}
+
+input:focus {
+  border: solid 1px #878787;
+}

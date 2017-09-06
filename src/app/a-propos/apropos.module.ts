@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core'
 import { CommonModule } from '@angular/common'
 
 import { AproposComponent } from './apropos.component'
-import { DialogModule } from '../dialog/dialog.module'
+// import { DialogModule } from '../dialog/dialog.module'
 
 @NgModule({
     imports: [ 
         CommonModule,
-        DialogModule
+        // DialogModule
     ],
     declarations: [ 
         AproposComponent

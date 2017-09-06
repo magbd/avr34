@@ -1,6 +1,9 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { MdDialogRef } from '@angular/material'
 import { MD_DIALOG_DATA } from '@angular/material'
+// import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/material'
+
+import { FormInscriptionComponent } from '../form/form-inscription.component'
 
 @Component({
   selector: 'dialog-content',
@@ -14,12 +17,12 @@ export class DialogContentComponent implements OnInit {
   ngOnInit() {
   }
 
-  onCloseConfirm() {
-    this.thisDialogRef.close('Confirm')
-  }
+  // onCloseConfirm() {
+  //   this.thisDialogRef.close('Confirm')
+  // }
 
-  onCloseCancel() {
-    this.thisDialogRef.close('Cancel')
-  }
+  // onCloseCancel() {
+  //   this.thisDialogRef.close('Cancel')
+  // }
 
 }
