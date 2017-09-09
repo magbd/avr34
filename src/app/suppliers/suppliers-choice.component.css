@@ -1,0 +1,40 @@
+.container-choice {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.connect {
+  width: 60%;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+.connect p {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+.filet {
+  border-top: solid 2px var(--main-green);
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  margin: 30px 0;
+}
+
+.filet p {
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: var(--main-green);
+  background-color: #DCE3D7;
+  font-weight: bold;
+  line-height: 2em;
+  left: 40%;
+  top: -1.7em;
+  width: 20%;
+}

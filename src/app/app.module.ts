@@ -7,15 +7,17 @@ import { AppComponent } from './app.component'
 import { NavbarModule } from './navbar/navbar.module'
 import { HomeModule } from './home/home.module'
 import { AproposModule } from './a-propos/apropos.module'
-import { DialogModule } from './dialog/dialog.module'
-import { FormModule } from './form/form.module'
+// import { DialogModule } from './dialog/dialog.module'
+// import { FormModule } from './form/form.module'
+import { SeekersModule } from './seekers/seekers.module'
+import { SuppliersModule } from './suppliers/suppliers.module'
 // import { SharedModule } from './shared/shared.module'
 
 import { AppRoutingModule }     from './app-routing.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -24,8 +26,10 @@ import { AppRoutingModule }     from './app-routing.module';
     NavbarModule,
     HomeModule,
     AproposModule,
-    DialogModule,
-    FormModule,
+    // DialogModule,
+    // FormModule,
+    SeekersModule,
+    SuppliersModule,
     // SharedModule,
     AppRoutingModule
   ],

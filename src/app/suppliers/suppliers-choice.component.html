@@ -1,0 +1,35 @@
+<div class="container-choice" *ngIf="currentPage === 'choice'">
+
+  <div class="headerModal d-flex-row">
+    
+    <!-- Title -->
+    <div class="titleForm">
+      <h3 class="title bold">Je me connecte</h3>
+      <p class="title">Comme entreprise RSE</p>
+    </div>
+
+    <!-- Close modal button -->
+    <div id="btnClose"></div>
+
+    </div>
+
+    <!-- Form -->
+    <form class="connect" action="" method="post">
+
+      <p class="text-grey">j'ai déjà un compte entreprise RSE</p>
+      <!-- <input class="btn-submit large" type="submit" name="btn-submit" value="accédez à votre espace"> -->
+      <a href="#" class="btn-submit">accédez à votre espace</a>
+
+      <div class="filet">
+        <p>ou</p>
+      </div>
+
+      <p class="text-grey">je souhaite rejoindre le réseau AVR34</p>
+      <!-- <input class="btn-submit large" type="submit" name="btn-submit" value="je m'inscris"> -->
+      <a (click)="goToPage('inscription')" class="btn-submit">je m'inscris</a>
+
+    </form>
+
+  </div>
+
+  <suppliers-inscription *ngIf="currentPage === 'inscription'"></suppliers-inscription>

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DialogContentComponent } from '../dialog/dialog-content.component'
+import { SeekersComponent } from '../seekers/seekers.component'
 import { MdDialog } from '@angular/material'
 
 @Component({
@@ -14,20 +14,20 @@ export class HomeContentComponent implements OnInit {
   
     constructor(public dialog: MdDialog) { }
   
-    dialogResult = ''
+    // dialogResult = ''
   
     ngOnInit() {
     }
   
     openDialog() {
-      let dialogRef = this.dialog.open(DialogContentComponent, {
+      let dialogRef = this.dialog.open(SeekersComponent, {
         width: '700px',
-        data: 'This text come from dialog.component'
+        // data: 'This text come from dialog.component'
       })
-      dialogRef.afterClosed().subscribe(result => {
-        console.log(`Dialog closed: ${result}`)
-        this.dialogResult = result
-      })
+      // dialogRef.afterClosed().subscribe(result => {
+      //   console.log(`Dialog closed: ${result}`)
+      //   this.dialogResult = result
+      // })
     }
   
   }

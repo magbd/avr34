@@ -176,6 +176,7 @@ p {
 /*Boutons normal et hover fonds couleur*/
 /*Boutons submit formulaire*/
 .btn-submit {
+  width: 100%;
   margin: 20px 0 10px 0;
   text-transform: uppercase;
   color: white;

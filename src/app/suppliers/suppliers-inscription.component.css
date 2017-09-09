@@ -1,0 +1,25 @@
+.container-inscription {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.inscription1,
+.inscription2,
+.inscription3,
+.inscription4,
+.inscription5 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.small.left {
+  width: 35%;
+}
+
+/*Ville + Mail*/
+.small.right{
+  width: 60%;
+}

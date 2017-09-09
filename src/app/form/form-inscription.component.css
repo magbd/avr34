@@ -8,3 +8,12 @@
 .small.right{
   width: 60%;
 }
+
+.registerPage1,
+.registerPage2,
+registerPage3 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}

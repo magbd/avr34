@@ -6,7 +6,7 @@ nav {
 nav .container {
   height: 80px;
   padding: 0;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
 }
 /*Logo*/
 .logoAVR {

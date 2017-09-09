@@ -13,7 +13,7 @@
     <ul class="d-flex-row vertical-center">
       <li><a [routerLink]="['/home']" class="nav-selected text-grey d-flex-column vertical-center"><img src="assets/medias/homepage.svg" alt="">accueil</a></li>
       <li><a [routerLink]="['/apropos']" class="text-grey d-flex-column vertical-center"><img src="assets/medias/star.svg" alt="">à propos</a></li>
-      <li><a href="#" class="text-purple d-flex-column vertical-center"><img src="assets/medias/user.svg" alt="">espace fournisseur</a></li>
+      <li><a (click)='openSupplierDialog()' class="text-purple d-flex-column vertical-center"><img src="assets/medias/user.svg" alt="">espace fournisseur</a></li>
     </ul>
 
 
