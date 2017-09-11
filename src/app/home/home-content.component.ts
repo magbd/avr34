@@ -15,6 +15,7 @@ export class HomeContentComponent implements OnInit {
     constructor(public dialog: MdDialog) { }
   
     // dialogResult = ''
+
   
     ngOnInit() {
     }
@@ -24,10 +25,13 @@ export class HomeContentComponent implements OnInit {
         width: '700px',
         // data: 'This text come from dialog.component'
       })
+      
       // dialogRef.afterClosed().subscribe(result => {
       //   console.log(`Dialog closed: ${result}`)
       //   this.dialogResult = result
       // })
     }
+
+   
   
   }

@@ -226,6 +226,7 @@ a.btn-submit {
 /* Modal Content/Box */
 .modalContent {
   /* width: 40%; */
+  /* min-height: 450px; */
   padding: 20px;
   background-color: white;
   border-radius: 20px;
@@ -233,12 +234,31 @@ a.btn-submit {
   flex-direction: column;
 }
 
+
 .headerModal {
   justify-content: space-between;
 }
 
 /*Close modal button*/
 #btnClose {
+  display: flex;
+  width: 35px;
+  height: 35px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border: solid 2px var(--main-green);
+  border-radius: 50%;
+  background: white;
+  outline: none;
+}
+#btnClose i {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-green);
+}
+/* #btnClose {
   position: relative;
   width: 35px;
   height: 35px;
@@ -273,7 +293,7 @@ a.btn-submit {
   right: 5px;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
-}
+} */
 
 /*--------- FORM ---------*/
 
@@ -286,7 +306,7 @@ a.btn-submit {
 }
 
 .title {
-  color: #1A8A7E;
+  color: var(--main-green);
   font-size: 1.2em;
 }
 
@@ -334,7 +354,7 @@ label {
   font-weight: bold;
   font-size: 0.8em;
   margin-bottom: 5px;
-  color: #706e6e;
+  color: var(--dark-grey);
 }
 
 input {

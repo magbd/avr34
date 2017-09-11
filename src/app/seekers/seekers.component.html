@@ -1,3 +1,109 @@
-<p>
-  seekers works!
-</p>
+<!-- Modal form-->
+<div id="modal">
+
+  <!-- Modal content -->
+  <div class="modalContent">
+
+    <div class="headerModal d-flex-row">
+      <div class="d-flex-column">
+        <!-- Title -->
+        <div class="titleForm">
+          <h3 class="title bold">J'ai un besoin</h3>
+          <p class="title">Je souhaite recevoir des devis</p>
+        </div>
+        <!-- Subtitle -->
+        <div class="subtitleForm" *ngIf="currentPage === 'page1'">
+          <p class="subtitle bold">Etape 1/2</p>
+          <p class="subtitle">Coordonées de l'entreprise</p>
+        </div>
+
+        <div class="subtitleForm" *ngIf="currentPage === 'page2'">
+          <p class="subtitle bold">Etape 2/2</p>
+          <p class="subtitle">Je souhaite trouver</p>
+        </div>
+      </div>
+      <!-- Close modal button -->
+      <button md-dialog-close id="btnClose">
+        <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+      </button>   
+
+    </div>
+
+    <!-- Form -->
+    <form action="index.html" method="post" *ngIf="currentPage !== 'page3'">
+
+      <!-- demande Etape1 -->
+      <div class="page1" *ngIf="currentPage === 'page1'">
+
+        <div class="formElement large">
+          <label for="name">Nom de l'entreprise</label>
+          <input type="text" name="name">
+        </div>
+
+        <div class="formElement large">
+          <label class="largeElem" for="adress">Adresse</label>
+          <input class="largeElem" type="text" name="adress">
+        </div>
+
+        <div class="formElement small left">
+          <label class="cp" for="cp">Code postal</label>
+          <input class="cp" type="text" name="cp">
+        </div>
+
+        <div class="formElement small right">
+          <label class="city" for="city">Ville</label>
+          <input class="city" type="text" name="city">
+        </div>
+
+        <div class="formElement small left">
+          <label class="tel" for="tel">Téléphone</label>
+          <input class="tel" type="tel" name="tel">
+        </div>
+
+        <div class="formElement small right">
+          <label class="mail" for="mail">Mail</label>
+          <input class="mail" type="email" name="mail">
+        </div>
+
+        <a class="btn-submit" (click)="goToPage('page2')">etape suivante</a>
+
+      </div>
+
+      <!-- demande Etape2 -->
+      <div class="page2" *ngIf="currentPage === 'page2'">
+
+        <div class="formElement large row">
+          <label for="switch">Une entreprise proche de chez moi</label>
+          <!-- Rounded switch -->
+          <label class="switch">
+            <input type="checkbox">
+            <div class="slider round"></div>
+          </label>
+        </div>
+
+        <div class="formElement large dropdown">
+          <select>
+                          <option value="volvo">Volvo</option>
+                          <option value="saab">Saab</option>
+                          <option value="opel">Opel</option>
+                          <option value="audi">Audi</option>
+          </select>
+        </div>
+
+        <a class="btn-submit" (click)="goToPage('page3')">envoyer ma demande</a>
+      </div>
+
+    </form>
+
+          <!-- demande Etape3 -->
+      <div class="page3" *ngIf="currentPage === 'page3'">
+        <div class="endingMessage">
+          <p class="confirmation">Demande enregistrée !</p>
+          <p class="message">Vous recevrez par mail une notification concernant votre demande puis vous serez contacté directement par les entreprises membres du réseau AVR34</p>
+          <button class="btn-submit close" md-dialog-close >quitter</button>
+        </div> 
+      </div>
+
+  </div>
+
+</div>

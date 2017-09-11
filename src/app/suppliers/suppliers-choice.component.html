@@ -9,16 +9,17 @@
     </div>
 
     <!-- Close modal button -->
-    <div id="btnClose"></div>
+    <button md-dialog-close id="btnClose">
+        <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+    </button>
 
     </div>
-
     <!-- Form -->
     <form class="connect" action="" method="post">
 
       <p class="text-grey">j'ai déjà un compte entreprise RSE</p>
       <!-- <input class="btn-submit large" type="submit" name="btn-submit" value="accédez à votre espace"> -->
-      <a href="#" class="btn-submit">accédez à votre espace</a>
+      <a (click)="goToPage('login')" class="btn-submit">accédez à votre espace</a>
 
       <div class="filet">
         <p>ou</p>
@@ -32,4 +33,5 @@
 
   </div>
 
+  <suppliers-login *ngIf="currentPage === 'login'"></suppliers-login>
   <suppliers-inscription *ngIf="currentPage === 'inscription'"></suppliers-inscription>

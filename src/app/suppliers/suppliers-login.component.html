@@ -1,0 +1,39 @@
+<div class="container-login" *ngIf="currentPage === 'login'">
+    
+      <div class="headerModal d-flex-row">
+        
+        <!-- Title -->
+        <div class="titleForm">
+          <h3 class="title bold">Je me connecte</h3>
+          <p class="title">Comme entreprise RSE</p>
+        </div>
+    
+        <!-- Close modal button -->
+        <button md-dialog-close id="btnClose">
+            <i class="fa fa-times fa-2x" aria-hidden="true"></i>
+        </button>
+    
+        </div>
+        <!-- Form -->
+        <form class="loginForm" action="" method="post">
+    
+          <div class="login">
+            <i class="fa fa-user fa-lg" aria-hidden="true"></i>
+            <input id="logId" type="text" name="identifiant" placeholder="Identifiant">
+          </div>
+
+          <div class="login">
+            <i class="fa fa-lock fa-lg" aria-hidden="true"></i>
+            <input class="logPassword" type="password" name="password" placeholder="Mot de passe">
+          </div>
+
+          <!-- TODO Accès espace espace perso -->
+          <a class="btn-submit">se connecter</a>
+
+          <a class="linkInscription" (click)="goToPage('inscription')">Pas encore inscrit ?</a>
+    
+        </form>
+    
+      </div>
+
+      <suppliers-inscription *ngIf="currentPage === 'inscription'"></suppliers-inscription>
